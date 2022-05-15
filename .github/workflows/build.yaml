@@ -20,3 +20,10 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn --batch-mode package
+      - name: Invoke workflow in another repo with inputs
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: deploy
+          repo: source-ci/refark-ops
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          inputs: '{ "application": "app1", "digest": "sha256:8b7a50b81dad64907ab41ce6e5f528b27951c12a6bb9c3d90feb4e9fc591faa6" }'
