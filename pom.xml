@@ -31,7 +31,7 @@
 					<version>3.2.1</version>
 					<configuration>
 						<to>
-							<image>192.168.49.2:5000/${project.artifactId}</image>
+							<image>ghcr.io/source-ci/${project.artifactId}</image>
 						</to>
 						<allowInsecureRegistries>true</allowInsecureRegistries>
 					</configuration>
