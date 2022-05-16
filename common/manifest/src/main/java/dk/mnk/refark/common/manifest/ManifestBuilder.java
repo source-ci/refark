@@ -44,7 +44,7 @@ public class ManifestBuilder extends AbstractProcessor {
                                             .withLabels(appLabel)
                                         .endMetadata()
                                         .withNewSpec()
-                                            .addNewContainer().withName(deploymentName).withImage("localhost:5000/app1").endContainer()
+                                            .addNewContainer().withName(deploymentName).withImage("ghcr.io/source-ci/app1").endContainer()
                                         .endSpec()
                                     .endTemplate()
                                 .endSpec()

@@ -39,6 +39,7 @@
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.2.1</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -47,6 +48,15 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<to>
+						<image>ghcr.io/source-ci/${project.artifactId}:${git.buildnumber}</image>
+						<auth>
+							<username>${env.REGISTRY_USERNAME}</username>
+							<password>${env.REGISTRY_PASSWORD}</password>
+						</auth>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
