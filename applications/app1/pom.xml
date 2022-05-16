@@ -50,7 +50,7 @@
 				</executions>
 				<configuration>
 					<to>
-						<image>ghcr.io/source-ci/${project.artifactId}:${git.buildnumber}</image>
+						<image>ghcr.io/source-ci/${project.artifactId}:${buildNumber}</image>
 						<auth>
 							<username>${env.REGISTRY_USERNAME}</username>
 							<password>${env.REGISTRY_PASSWORD}</password>
